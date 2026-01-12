@@ -1,0 +1,24 @@
+#1.
+pet_type = "lop rabbit"
+pet_name = "Ludo"
+print(f"I have a {pet_type} and his name is {pet_name}.")
+
+#2.
+person_name = input("Enter your name: ")
+person_age = int(input("Enter your current age: "))
+yearly_savings = int(input("Enter your yearly savings: "))
+print(f"Hello {person_name}! You are currently {person_age} years old.\nIn 10 years, you will be {person_age + 10}.\nIf you save ${yearly_savings} each year, in 5 years you will have saved ${yearly_savings * 5}.")
+
+#3
+import datetime
+import calendar
+current_month = calendar.month_name[datetime.date.today().month]
+days_in_month = calendar.monthrange(datetime.date.today().year, datetime.date.today().month)[1]
+num_seconds = days_in_month * 60*60*24
+print (f"The number of seconds in {current_month} is {num_seconds}.")
+
+#4
+num_eggs = int(input("How many eggs do you have? "))
+egg_dozen = num_eggs // 12
+egg_remain = num_eggs % 12
+print(f"A total of {num_eggs} eggs makes {egg_dozen} dozen with {egg_remain} left over.")
