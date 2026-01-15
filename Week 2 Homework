@@ -1,0 +1,27 @@
+#1
+x = 45
+print (x, bin(x), hex(x))
+
+#2
+#x = 1.825
+#print (x, bin(x), hex(x))
+#the error that printed was "'float' object cannot be interpreted as an integer"
+x = 18
+print (x, bin(x), hex(x))
+
+#3
+y = 0b1011
+z = 0xA3
+print (y, z)
+
+#4
+w = x + y + z
+print ("The sum is ", w)
+
+#Compression 1 & 2
+og_text_size = 240
+dictionary_size = 25
+compressed_text_size = 148
+percent_of_compression = (1-(compressed_text_size + dictionary_size) / og_text_size)
+rounded_percent_of_compression = round(percent_of_compression, 4)
+print (f"The percentage of compression is {rounded_percent_of_compression} or{percent_of_compression: .2%}.")
